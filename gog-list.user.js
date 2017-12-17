@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name goglist
-// @version 1.0.0
+// @version 1.0.1
 // @namespace http://stuartdb.com
 // @author Stuart Baker
 // @description Extracts a list of owned games from gog library
@@ -27,7 +27,8 @@ var cruncher = (function () {
 
     create_game_title_list = function(game_titles) {
         var i = 0,
-            li,                      
+            li,
+            seperator = '|',                  
             ul;
         
         ul = document.createElement("ul");
@@ -35,7 +36,7 @@ var cruncher = (function () {
 
         for (i = 0; i < game_titles.length; i = i + 1) {
             li = document.createElement("ul");
-            li.textContent = game_titles[i]
+            li.textContent = game_titles[i] + seperator
             ul.appendChild(li);
         }
 
