@@ -1,4 +1,4 @@
-lurk-more
+gog-list
 ==============
 
 A userscript to add a plain text list of your gog game library to your account page for easy copy/pasting.
